@@ -16,16 +16,16 @@ mostly used configs for linux-workstation
 azure-cli:
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 
-helm
+helm:
 https://helm.sh/docs/using_helm/
 
-terraform
+terraform:
 https://www.terraform.io/downloads.html
 
-kubectl
+kubectl:
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
-kubectx
+kubectx:
 https://github.com/ahmetb/kubectx
 
 
@@ -35,4 +35,3 @@ https://github.com/ahmetb/kubectx
   - docker
   - docker-compose
   - ansible
-  

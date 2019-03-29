@@ -47,6 +47,7 @@ https://code.visualstudio.com/docs/setup/linux
   - git
   - git k
   - vim
+  - gpg
   - docker
   - docker-compose
   - ansible

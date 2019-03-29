@@ -28,10 +28,26 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 kubectx:
 https://github.com/ahmetb/kubectx
 
+veracrypt:
+https://www.veracrypt.fr/en/Downloads.html
+
+atom:
+```console
+$ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+$ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+$ sudo apt-get update
+$ sudo apt-get install atom
+```
+
+visual studio code:
+https://code.visualstudio.com/docs/setup/linux
+
 
 ### FROM OS-default-REPOs
   - git
+  - git k
   - vim
   - docker
   - docker-compose
   - ansible
+  - keepassx

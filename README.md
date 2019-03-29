@@ -3,10 +3,15 @@ mostly used configs for linux-workstation
 
 ## Files are located in your homedir or relatively put to this
 
-### Some of the Files are only meant to expand existing ones:
+To let us do the work for you, just execute setup.sh in this repository:
+```console
+$ ./setup.sh
+```
+
+### Some of the Files are only meant to expand existing ones (setup.sh will handle this for you):
   - .bashrc
 
-### and some have to be modified before using them (i.e. changing email-address)
+### and some have to be modified before using them (i.e. changing email-address) - setup.sh also covers this:
   - .gitconfig
 
 ## Common tools to be installed

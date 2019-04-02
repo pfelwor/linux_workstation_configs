@@ -57,3 +57,11 @@ https://code.visualstudio.com/docs/setup/linux
   - docker-compose
   - ansible
   - keepassx
+
+
+## the atom_package_list-file can be used to install common used packages (only community-packages included here - built-in ones you want to have enabled are not listed!):
+```console
+$ apm install --packages-file ./atom_package_list
+# to export a list from your current installation:
+$ apm list --installed --bare > atom_package_list
+```

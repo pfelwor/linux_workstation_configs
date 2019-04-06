@@ -36,6 +36,9 @@ https://github.com/ahmetb/kubectx
 veracrypt:
 https://www.veracrypt.fr/en/Downloads.html
 
+apache directory server:
+http://directory.apache.org/studio/download/download-linux.html
+
 atom:
 ```console
 $ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
@@ -57,6 +60,7 @@ https://code.visualstudio.com/docs/setup/linux
   - docker-compose
   - ansible
   - keepassx
+  - openjdk-8-jdk
 
 
 ## the atom_package_list-file can be used to install common used packages (only community-packages included here - built-in ones you want to have enabled are not listed!):

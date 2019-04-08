@@ -33,6 +33,9 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 kubectx:
 https://github.com/ahmetb/kubectx
 
+minikube:
+https://kubernetes.io/docs/tasks/tools/install-minikube/
+
 veracrypt:
 https://www.veracrypt.fr/en/Downloads.html
 

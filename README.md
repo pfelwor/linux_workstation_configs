@@ -22,7 +22,7 @@ azure-cli:
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 
 helm:
-https://helm.sh/docs/using_helm/
+https://helm.sh/docs/using_helm/#installing-helm
 
 terraform:
 https://www.terraform.io/downloads.html
@@ -39,7 +39,7 @@ https://kubernetes.io/docs/tasks/tools/install-minikube/
 veracrypt:
 https://www.veracrypt.fr/en/Downloads.html
 
-apache directory server:
+apache directory studio:
 http://directory.apache.org/studio/download/download-linux.html
 
 atom:

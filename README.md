@@ -58,6 +58,7 @@ https://code.visualstudio.com/docs/setup/linux
   - git
   - gitk
   - vim
+  - tmux
   - gpg
   - docker
   - docker-compose

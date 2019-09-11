@@ -54,6 +54,13 @@ $ sudo apt-get update
 $ sudo apt-get install pdk
 ```
 
+puppet-bolt:
+https://puppet.com/docs/bolt/latest/bolt_installing.html#task-7569
+install repo as above and then type
+```console
+$ sudo apt-get install puppet-bolt
+```
+
 atom:
 ```console
 $ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -

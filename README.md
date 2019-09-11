@@ -42,6 +42,18 @@ https://www.veracrypt.fr/en/Downloads.html
 apache directory studio:
 http://directory.apache.org/studio/download/download-linux.html
 
+visual studio code:
+https://code.visualstudio.com/docs/setup/linux
+
+pdk (puppet development kit):
+https://puppet.com/docs/pdk/1.x/pdk_install.html
+```console
+$ wget https://apt.puppet.com/puppet-tools-release-bionic.deb
+$ sudo dpkg -i puppet-tools-release-bionic.deb
+$ sudo apt-get update
+$ sudo apt-get install pdk
+```
+
 atom:
 ```console
 $ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
@@ -49,9 +61,6 @@ $ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any
 $ sudo apt-get update
 $ sudo apt-get install atom
 ```
-
-visual studio code:
-https://code.visualstudio.com/docs/setup/linux
 
 
 ### recommended packages from OS-default-Repos

@@ -4,6 +4,7 @@
   apt:
     name:
     # packages from default OS-repos
+    - openssh-server
     - ansible
     - tmux
     - git

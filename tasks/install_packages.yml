@@ -1,5 +1,12 @@
 ---
 # install packages - from default repos and custom repos
+- name: Upgrade all packages to the latest version
+  apt:
+    name: "*"
+    state: latest
+  become: yes
+  tags: ['linux_workstation_configs']
+
 - name: install packages
   apt:
     name:

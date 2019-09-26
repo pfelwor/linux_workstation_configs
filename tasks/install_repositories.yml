@@ -1,0 +1,29 @@
+---
+# install non-default repositories
+- name: adding Microsoft gpg key
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc
+    state: present
+  become: yes
+  tags: ['linux_workstation_configs']
+
+- name: adding azure-cli repo
+  apt_repository:
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ {{ ansible_lsb.codename }} main
+    state: present
+  become: yes
+  tags: ['linux_workstation_configs']
+
+- name: adding docker gpg key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+  become: yes
+  tags: ['linux_workstation_configs']
+
+- name: adding azure-cli repo
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_lsb.codename }} stable
+    state: present
+  become: yes
+  tags: ['linux_workstation_configs']

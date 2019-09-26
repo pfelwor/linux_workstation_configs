@@ -1,0 +1,32 @@
+---
+# install packages - from default repos and custom repos
+- name: install packages
+  apt:
+    name:
+    # packages from default OS-repos
+    - tmux
+    - git
+    - gitk
+    - gpg
+    - keepassx
+    - openjdk-8-jdk
+    - bash-completion
+    - vim
+    - vim-common
+    - ca-certificate
+    - curl
+    - apt-transport-https
+    - lsb-release
+    - gnupg
+    - gnupg-agent
+    - software-properties-common
+    # packages from custom repos
+    - azure-cli
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+    - docker-compose
+    state: present
+    update_cache: yes
+  become: yes
+  tags: ['linux_workstation_configs']

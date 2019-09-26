@@ -1,91 +1,95 @@
-# linux_workstation_configs
-mostly used configs for my linux-workstation used for development in a cloud-infrastructure-environment
+linux_workstation_configs
+=========
 
-## Files are located in your homedir or relatively put to this
+Ansible role to configure a linux workstation for cloud and automation development.
+Currently only supporting ubuntu
 
-To let us do the work for you, just execute setup.sh in this repository:
+TODO:
+add packages:
+
+helm
+terraform
+kubectl
+kubectx
+minikube
+veracrypt
+pdk?
+
+Requirements
+------------
+
+You need ansible to be installed on your machine:
+
 ```console
-$ ./setup.sh
+# sudo apt-get install -y ansible
 ```
 
-#### Some of the Files are only meant to expand existing ones (setup.sh will handle this for you):
-  - .bashrc
+Role Variables
+--------------
 
-#### and some have to be modified before using them (i.e. changing email-address) - setup.sh also covers this:
-  - .gitconfig
+set in defaults/main.yml:
 
-## Common tools you should consider to install on your machine
+```yaml
+install_atom_packages: false
+```
+if you want atom-packages to be installed, you have to overwrite this variable to be "true"
 
-### Packages not in OS-Repo by default
+You also have to set variables for:
 
-azure-cli:
-https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
-
-helm:
-https://helm.sh/docs/using_helm/#installing-helm
-
-terraform:
-https://www.terraform.io/downloads.html
-
-kubectl:
-https://kubernetes.io/docs/tasks/tools/install-kubectl/
-
-kubectx:
-https://github.com/ahmetb/kubectx
-
-minikube:
-https://kubernetes.io/docs/tasks/tools/install-minikube/
-
-veracrypt:
-https://www.veracrypt.fr/en/Downloads.html
-
-apache directory studio:
-http://directory.apache.org/studio/download/download-linux.html
-
-visual studio code:
-https://code.visualstudio.com/docs/setup/linux
-
-pdk (puppet development kit):
-https://puppet.com/docs/pdk/1.x/pdk_install.html
-```console
-$ wget https://apt.puppet.com/puppet-tools-release-bionic.deb
-$ sudo dpkg -i puppet-tools-release-bionic.deb
-$ sudo apt-get update
-$ sudo apt-get install pdk
+```yaml
+git_username:
+git_mailaddress:
 ```
 
-puppet-bolt:
-https://puppet.com/docs/bolt/latest/bolt_installing.html#task-7569
-install repo as above and then type
-```console
-$ sudo apt-get install puppet-bolt
+to be set in .gitconfig-file
+
+Dependencies
+------------
+
+You have to ensure that you execute ansible with the user you want to work later on as it will place config-files in the users home directory.
+
+Be sure that the user is in sudoers group to be possible to install packages.
+
+Example Playbook
+----------------
+
+call this role with a site.yml looking like:
+
+```yaml
+- import_playbook: linux_workstation_configs.yml
 ```
 
-atom:
-```console
-$ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
-$ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
-$ sudo apt-get update
-$ sudo apt-get install atom
+and linux_workstation_configs.yml with content (in this case we connect with a user and then use sudo):
+
+```yaml
+- hosts: foo
+  remote_user: <USER>
+  roles:
+    - linux_workstation_configs
 ```
 
+using inventory file hosts.yml like:
 
-### recommended packages from OS-default-Repos
-  - git
-  - gitk
-  - vim
-  - tmux
-  - gpg
-  - docker
-  - docker-compose
-  - ansible
-  - keepassx
-  - openjdk-8-jdk
-
-
-## the atom_package_list-file can be used to install common used packages (only community-packages included here - built-in ones you want to have enabled are not listed!):
-```console
-$ apm install --packages-file ./atom_package_list
-# to export a list from your current installation:
-$ apm list --installed --bare > atom_package_list
+```yaml
+foo:
+  hosts:
+    <IP>:
 ```
+
+and this role in roles-directory, just by typing:
+
+```console
+# ansible-playbook -i hosts linux_workstation_configs.yml --key-file "<private-ssh-key>"
+```
+
+### other possibility is to just execute the playbook localy!
+
+License
+-------
+
+BSD
+
+Author Information
+------------------
+
+Philipp Felwor - a3s

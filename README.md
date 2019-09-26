@@ -2,12 +2,7 @@ linux_workstation_configs
 =========
 
 Ansible role to configure a linux workstation for cloud and automation development.
-Currently only supporting xubuntu 19.04
-
-TODO:
-add packages:
-
-pdk?
+Currently only supporting (x)ubuntu
 
 Requirements
 ------------
@@ -93,4 +88,4 @@ BSD
 Author Information
 ------------------
 
-Philipp Felwor - a3s
+Philipp Felwor

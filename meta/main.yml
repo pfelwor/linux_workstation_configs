@@ -24,6 +24,8 @@ galaxy_info:
   platforms:
     - name: xubuntu
       versions:
+      - 18.04
+      - 18.10
       - 19.04
 
   galaxy_tags: []

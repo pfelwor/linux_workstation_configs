@@ -80,6 +80,8 @@ and this role in roles-directory, just by typing:
 # ansible-playbook --connection=local --inventory 127.0.0.1, <PLAYBOOK>
 ```
 
+Do not use remote_user variable in playbook in this case.
+
 License
 -------
 

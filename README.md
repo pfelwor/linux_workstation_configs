@@ -76,7 +76,11 @@ and this role in roles-directory, just by typing:
 # ansible-playbook -i hosts linux_workstation_configs.yml --key-file "<private-ssh-key>"
 ```
 
-### other possibility is to just execute the playbook localy!
+### other possibility is to just execute the playbook localy:
+
+```console
+# ansible-playbook --connection=local --inventory 127.0.0.1, <PLAYBOOK>
+```
 
 License
 -------

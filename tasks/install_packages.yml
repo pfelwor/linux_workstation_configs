@@ -31,3 +31,25 @@
     update_cache: yes
   become: yes
   tags: ['linux_workstation_configs']
+
+- name: install helm binary
+  copy:
+    # currenty v. 3.0.0-beta.3
+    src: binaries/helm
+    dest: /usr/local/bin/helm
+    mode: '0755'
+    owner: root
+    group: root
+  become: yes
+  tags: ['linux_workstation_configs']
+
+- name: install terraform binary
+  copy:
+    # currenty v. 0.12.9
+    src: binaries/terraform
+    dest: /usr/local/bin/terraform
+    mode: '0755'
+    owner: root
+    group: root
+  become: yes
+  tags: ['linux_workstation_configs']

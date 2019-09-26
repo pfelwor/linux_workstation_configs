@@ -57,6 +57,9 @@ and linux_workstation_configs.yml with content (in this case we connect with a u
 
 ```yaml
 - hosts: foo
+  vars:
+    git_mailaddress: <MAILADDRESS>
+    git_username: <GIT_USERNAME>
   remote_user: <USER>
   roles:
     - linux_workstation_configs

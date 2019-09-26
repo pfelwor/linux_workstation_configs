@@ -21,9 +21,23 @@
   become: yes
   tags: ['linux_workstation_configs']
 
-- name: adding azure-cli repo
+- name: adding docker repo
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_lsb.codename }} stable
+    state: present
+  become: yes
+  tags: ['linux_workstation_configs']
+
+- name: adding atom gpg key
+  apt_key:
+    url: https://packagecloud.io/AtomEditor/atom/gpgkey
+    state: present
+  become: yes
+  tags: ['linux_workstation_configs']
+
+- name: adding atom repo
+  apt_repository:
+    repo: deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main
     state: present
   become: yes
   tags: ['linux_workstation_configs']

@@ -29,6 +29,7 @@
     - gnupg
     - gnupg-agent
     - software-properties-common
+    - vpnc
     # packages from custom repos
     - azure-cli
     - docker-ce

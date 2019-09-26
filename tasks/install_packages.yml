@@ -1,7 +1,7 @@
 ---
 # install packages - from default repos and custom repos
 # instal aptitude first to be able to update the system
-- name: install packages
+- name: install aptitude
   apt:
     name:
       - aptitude

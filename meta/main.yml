@@ -1,6 +1,6 @@
 galaxy_info:
   author: Philipp Felwor
-  description: ansible role to configure linux workstation for cloud and automation
+  description: ansible role to configure linux workstation for cloud- and infrastructure-automation development
   company: a3s
 
   license: license (GPLv2, CC-BY, etc)

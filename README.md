@@ -7,12 +7,6 @@ Currently only supporting ubuntu
 TODO:
 add packages:
 
-helm
-terraform
-kubectl
-kubectx
-minikube
-veracrypt
 pdk?
 
 Requirements

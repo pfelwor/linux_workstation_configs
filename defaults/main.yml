@@ -1,0 +1,3 @@
+---
+# defaults file for linux_workstation
+install_atom_packages: false

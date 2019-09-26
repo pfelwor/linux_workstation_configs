@@ -1,0 +1,6 @@
+---
+# install atom packages from list
+- name: install atom packages
+  command: apm install --packages-file /home/{{ ansible_user }}/atom_package_list
+  when: install_atom_packages
+  tags: [linux_workstation_configs]

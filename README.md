@@ -2,7 +2,7 @@ linux_workstation_configs
 =========
 
 Ansible role to configure a linux workstation for cloud and automation development.
-Currently only supporting ubuntu
+Currently only supporting xubuntu 19.04
 
 TODO:
 add packages:

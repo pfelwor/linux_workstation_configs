@@ -3,7 +3,7 @@
 - name: place atom_package_list
   copy:
     src: atom_package_list
-    dest: "{{ ansible_facts['env']['HOME'] }}"/atom_package_list
+    dest: "{{ ansible_facts['env']['HOME'] }}/atom_package_list"
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: '0644'
@@ -12,7 +12,7 @@
 - name: place vimrc
   copy:
     src: vimrc
-    dest: "{{ ansible_facts['env']['HOME'] }}"/.vimrc
+    dest: "{{ ansible_facts['env']['HOME'] }}/.vimrc"
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: '0644'
@@ -21,7 +21,7 @@
 - name: place kubectl_autocompletion
   copy:
     src: kubectl_autocompletion
-    dest: "{{ ansible_facts['env']['HOME'] }}"/.kubectl_autocompletion
+    dest: "{{ ansible_facts['env']['HOME'] }}/.kubectl_autocompletion"
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: '0644'
@@ -30,7 +30,7 @@
 - name: place gitconfig
   template:
     src: gitconfig
-    dest: "{{ ansible_facts['env']['HOME'] }}"/.gitconfig
+    dest: "{{ ansible_facts['env']['HOME'] }}/.gitconfig"
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: '0644'

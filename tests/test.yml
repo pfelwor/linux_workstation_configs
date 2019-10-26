@@ -4,4 +4,4 @@
     git_mailaddress: foo@bar.com
     git_username: Foo Bar
   roles:
-    - linux_workstation_configs
+    - ../../linux_workstation_configs

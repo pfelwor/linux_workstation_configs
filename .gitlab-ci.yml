@@ -1,4 +1,4 @@
-image: "phuxfu/a3s:a3s_debian_ansible"
+image: "ubuntu:latest"
 
 stages:
   - ansible
@@ -7,6 +7,7 @@ ansible:
   stage: ansible
   script:
     # needed because ansible looks for python(2):
+    - apt-get install -y ansible
     - ln -s /usr/bin/python3 /usr/bin/python
     - /bin/bash -x ./tests/prepare.sh
     - ansible-playbook -v --connection=local --inventory 127.0.0.1, tests/test.yml

@@ -37,7 +37,7 @@ Dependencies
 
 You have to ensure that you execute ansible with the user you want to work later on as it will place config-files in the users home directory.
 
-Be sure that the user is in sudoers group to be possible to install packages.
+Be sure that the user is in sudoers group to be able to install packages.
 
 Example Playbook
 ----------------

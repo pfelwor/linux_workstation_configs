@@ -10,7 +10,7 @@ ansible:
     - ln -s /usr/bin/python3 /usr/bin/python
     - /bin/bash -x ./tests/prepare.sh
     - echo "DEBUG"
-    - cat tail /etc/sudoers
+    - cat /etc/sudoers
     - /usr/bin/id
     - /usr/bin/id foo
     - echo "DEBUG END"

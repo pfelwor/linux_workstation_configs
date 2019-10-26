@@ -8,6 +8,6 @@ ansible:
   script:
     # needed because ansible looks for python(2):
     - apt-get update && apt-get install -y ansible
-    - ln -s /usr/bin/python3 /usr/bin/python
+    - if [ ! -e /usr/bin/python ] ; then ln -s /usr/bin/python3 /usr/bin/python ; fi
     - /bin/bash -x ./tests/prepare.sh
     - ansible-playbook -v --connection=local --inventory 127.0.0.1, tests/test.yml

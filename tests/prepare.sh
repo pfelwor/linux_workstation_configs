@@ -1,4 +1,4 @@
 #!/bin/bash
-useradd -m foo
+#useradd -m foo
 apt-get install -y sudo
-echo "foo  ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+#echo "foo  ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers

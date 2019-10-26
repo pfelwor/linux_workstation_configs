@@ -8,5 +8,5 @@ ansible:
   script:
     # needed because ansible looks for python(2):
     - ln -s /usr/bin/python3 /usr/bin/python
-    - /bin/bash ./tests/prepare.sh
+    - /bin/bash -x ./tests/prepare.sh
     - sudo -u foo ansible-playbook --connection=local --inventory 127.0.0.1, tests/test.yml

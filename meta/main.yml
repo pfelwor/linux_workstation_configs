@@ -22,7 +22,7 @@ galaxy_info:
   # platforms is a list of platforms, and each platform has a name and a list of versions.
   #
   platforms:
-    - name: xubuntu
+    - name: ubuntu
       versions:
       - 18.04
       - 18.10

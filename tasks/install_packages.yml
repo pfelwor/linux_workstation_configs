@@ -40,6 +40,7 @@
     - gnupg-agent
     - software-properties-common
     - vpnc
+    - nmap
     # packages from custom repos
     - azure-cli
     - docker-ce

@@ -1,5 +1,4 @@
 ---
-# install packages - from default repos and custom repos
 # instal aptitude first to be able to update the system
 - name: install aptitude
   apt:
@@ -9,7 +8,7 @@
     update_cache: yes
   become: yes
   tags: ['linux_workstation_configs']
-
+  
 - name: Upgrade all packages to the latest version
   apt:
     name: "*"
@@ -17,6 +16,7 @@
   become: yes
   tags: ['linux_workstation_configs']
 
+# install packages - from default repos and custom repos
 - name: install packages
   apt:
     name:

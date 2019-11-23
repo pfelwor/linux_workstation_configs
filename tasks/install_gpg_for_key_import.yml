@@ -1,0 +1,8 @@
+---
+# install gpg
+
+- name: install gpg
+  apt:
+    name:
+    # packages from default OS-repos
+    - gpg

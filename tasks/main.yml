@@ -1,6 +1,7 @@
 ---
 # tasks file for linux_workstation
 - include: place_configfiles.yml
+- include: install_gpg_for_key_import.yml
 - include: install_repositories.yml
 - include: install_packages.yml
 - include: configure_atom.yml

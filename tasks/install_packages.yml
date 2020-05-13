@@ -41,6 +41,8 @@
     - software-properties-common
     - vpnc
     - nmap
+    - guake
+    - vagrant
     # packages from custom repos
     - azure-cli
     - docker-ce

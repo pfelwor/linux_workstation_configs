@@ -50,6 +50,7 @@
     - containerd.io
     - docker-compose
     - atom
+    - virtualbox-6.1
     state: present
     update_cache: yes
   become: yes

@@ -1,11 +1,12 @@
-atom-inline-blame@0.0.6
+angular-snippets@8.0.2
+atom-inline-blame@0.0.7
 autosave-onchange@1.5.1
 docker@0.8.0
+emmet@2.4.3
 ide-json@0.2.1
 language-ansible@0.2.2
 language-docker@1.1.8
 language-puppet@0.23.0
-language-terraform@0.8.1
-language-viml@1.1.10
-linter-kubectl@1.0.1
-
+language-terraform@0.9.3
+language-viml@1.2.1
+linter-kubectl@1.0.2

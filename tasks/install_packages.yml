@@ -8,7 +8,7 @@
     update_cache: yes
   become: yes
   tags: ['linux_workstation_configs']
-  
+
 - name: Upgrade all packages to the latest version
   apt:
     name: "*"
@@ -51,6 +51,7 @@
     - docker-compose
     - atom
     - virtualbox-6.1
+    - kubectl
     state: present
     update_cache: yes
   become: yes

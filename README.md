@@ -2,7 +2,10 @@ linux_workstation_configs
 =========
 
 Ansible role to configure a linux workstation for cloud- and infrastructure-automation development.
-Currently only supporting (x)ubuntu
+Currently only supporting (x)ubuntu  
+  
+##### Known issue: Some repositories are currently not provided for (x)ubuntu 20.04 (Focal Fossa) - therefore you have to set repo-URL to "eoan" instead of the "focal" which will be set by {{ ansible_lsb.codename }} in tasks/install_repositories.yml !  
+You have to apply the above workaround for: azure-cli, docker and virtualbox repositories.  
 
 Requirements
 ------------

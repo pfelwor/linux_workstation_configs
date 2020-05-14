@@ -59,7 +59,6 @@
 
 - name: install helm binary
   copy:
-    # currenty v. 3.0.0-beta.3
     src: binaries/helm
     dest: /usr/local/bin/helm
     mode: '0755'
@@ -70,7 +69,6 @@
 
 - name: install terraform binary
   copy:
-    # currenty v. 0.12.9
     src: binaries/terraform
     dest: /usr/local/bin/terraform
     mode: '0755'
@@ -79,20 +77,9 @@
   become: yes
   tags: ['linux_workstation_configs']
 
-- name: install kubectl binary
-  copy:
-    # currenty v. 0.16.0
-    src: binaries/kubectl
-    dest: /usr/local/bin/kubectl
-    mode: '0755'
-    owner: root
-    group: root
-  become: yes
-  tags: ['linux_workstation_configs']
 
 - name: install kubectx binary
   copy:
-    # currenty v. 0.7.0
     src: binaries/kubectx
     dest: /usr/local/bin/kubectx
     mode: '0755'
@@ -103,7 +90,6 @@
 
 - name: install kubens binary
   copy:
-    # currenty v. 0.7.0
     src: binaries/kubens
     dest: /usr/local/bin/kubens
     mode: '0755'
@@ -114,7 +100,6 @@
 
 - name: install minikube binary
   copy:
-    # currenty v. 1.4.0
     src: binaries/minikube
     dest: /usr/local/bin/minikube
     mode: '0755'

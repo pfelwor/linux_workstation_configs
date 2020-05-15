@@ -43,6 +43,7 @@
     - nmap
     - guake
     - vagrant
+    - powertop
     # packages from custom repos
     - azure-cli
     - docker-ce

@@ -44,6 +44,7 @@
     - guake
     - vagrant
     - powertop
+    - smartmontools
     # packages from custom repos
     - azure-cli
     - docker-ce

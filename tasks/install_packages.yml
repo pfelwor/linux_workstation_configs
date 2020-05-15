@@ -45,6 +45,7 @@
     - vagrant
     - powertop
     - smartmontools
+    - acpi-call
     # packages from custom repos
     - azure-cli
     - docker-ce

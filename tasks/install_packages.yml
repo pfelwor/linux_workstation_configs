@@ -46,6 +46,7 @@
     - powertop
     - smartmontools
     - acpi-call
+    - pwgen
     # packages from custom repos
     - azure-cli
     - docker-ce
